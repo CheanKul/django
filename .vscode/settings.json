@@ -1,0 +1,6 @@
+{
+    "python.pythonPath": "D:\\Projects\\Personal\\Python\\TryDjango\\Scripts\\python.exe",
+    "python.autoComplete.extraPaths": [
+        "D:\\Projects\\Personal\\Python\\TryDjango\\Lib\\site-packages"
+    ]
+}

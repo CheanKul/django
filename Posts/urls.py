@@ -19,7 +19,6 @@ from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register('posts', views.Posts)
-router.register('users', views.Users)
 
 urlpatterns = [
     path('', include(router.urls)),
