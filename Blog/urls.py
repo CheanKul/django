@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/auth/refresh', TokenRefreshView.as_view()),
     path('api/auth/token', obtain_jwt_token),
-    path('api/auth/', include('User.urls')),
-    path('api/post/', include('Posts.urls')),
+    path('api/users/', include('User.urls')),
+    path('api/posts/', include('Posts.urls')),
 
 ]

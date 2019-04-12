@@ -84,17 +84,17 @@ class UserCreateSerializer(ModelSerializer):
 
 
 class UserLoginSerializer(ModelSerializer):
-    token = CharField(allow_blank=True, read_only=True)
-    username = CharField()
+    Token = CharField(allow_blank=True, read_only=True)
+    Username = CharField()
 
     class Meta:
         model = User
         fields = [
-            'username',
+            'Username',
             'password',
-            'token',
+            'Token',
         ]
-        extra_kwargs = {"password":
+        extra_kwargs = {"Password":
                         {"write_only": True}
                         }
 
